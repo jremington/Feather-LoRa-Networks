@@ -74,7 +74,7 @@ void setup()
         }
   */
   
-  // Manually define the routes for this network
+  // Manually define the routes for this network node
   manager.addRouteTo(SERVER1_ADDRESS, SERVER1_ADDRESS);  
   manager.addRouteTo(SERVER2_ADDRESS, SERVER2_ADDRESS);
   manager.addRouteTo(SERVER3_ADDRESS, SERVER3_ADDRESS);
