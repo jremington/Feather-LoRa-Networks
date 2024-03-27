@@ -75,14 +75,14 @@ void setup()
         while (1); //hang
         }
   */
-  // assume network connectivity 1<->2<->3 exclusive  (only neighbor nodes visible)
+  // assume network connectivity 1<->2
   // Manually define the routes for this network node, which can talk only to SERVER1
   manager.addRouteTo(CLIENT2_ADDRESS, CLIENT2_ADDRESS);
 
   while (Serial1.available()) char c = Serial1.read(); //empty Serial1 input buffer.
 }
 
-// loop() collects data from Serial1 and transmits text messages to node 3
+// loop() collects data from Serial1 and transmits text messages to node 2
 
 void loop()
 {
