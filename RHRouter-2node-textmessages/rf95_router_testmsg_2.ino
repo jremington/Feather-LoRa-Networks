@@ -8,10 +8,6 @@
 #include <RH_RF95.h>
 #include <SPI.h>
 
-// In this small artifical network of 2 nodes,
-// messages are routed via intermediate nodes to their destination
-// node. All nodes can act as routers
-
 #define CLIENT1_ADDRESS 1
 #define CLIENT2_ADDRESS 2
 
