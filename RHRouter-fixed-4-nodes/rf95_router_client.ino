@@ -1,8 +1,8 @@
 // modified from rf22_router_client.pde
 // -*- mode: C++ -*-
 // Example sketch showing how to create a simple addressed, routed reliable messaging client
-// with the RHRouter class.
-// It is designed to work with the other examples rf95_router_server*
+// with the RHRouter class. It is designed to work with the other examples rf95_router_*
+// This is a one way network, with messages transferred from client to server3 (in this example)
 
 #include <RHRouter.h>
 #include <RH_RF95.h>
