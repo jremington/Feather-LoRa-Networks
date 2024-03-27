@@ -4,11 +4,10 @@ Less noisy that FeatherMeshTest, only received messages and minimal network info
 **Example data report:** packet number (on a per node basis, to detect data loss), and node battery voltage.
 
 **Node info report:** looks something like this:
-
-3 1(1,-48) 2(2,-42) 4(4,-47)
+`3 1(1,-48) 2(2,-42) 4(4,-47)`
 
 Interpretation:
 Node 3 communicates directly with nodes 1, 2 and 4, with stated last rssi values. No hops
-With hops, it might look like the following (all routes from 3 start at node 2):
 
-3 1(2,-48) 2(2,-46) 4(2,-47)
+With hops, it might look like the following (all routes from 3 start at node 2):
+`3 1(2,-48) 2(2,-46) 4(2,-47)`
