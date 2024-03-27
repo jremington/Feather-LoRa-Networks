@@ -4,6 +4,6 @@ This repository contains several working, tested examples of standalone LoRa net
 
 Examples include a self-organizing, standalone mesh network, based on the RHMesh manager, and fixed node repeater networks based on the RHRouter and RH_ReliableDatagram managers.
 
-Message traffic features acknowledged, reliable message delivery to intermediate nodes, but in multi-hop networks, the ultimate target does not automatically acknowledge to the originator of successful delivery. So, another network layer or mechanism is needed for reliable end-to-end message delivery or, for example, file transfer.
+Message traffic features acknowledged, reliable message delivery to intermediate nodes, but in multi-hop networks, the ultimate target does not automatically acknowledge to the originator of successful delivery. In other words, end-to-end message receipt is not acknowledged. Another network layer or mechanism is needed for reliable end-to-end message delivery or, for example, file transfer.
 
 In countless hours of tests, I have not encountered any obvious bugs in the RadioHead library. It is a solid, very reliable and very professional contribution to the community.
