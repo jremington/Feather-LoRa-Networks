@@ -1,5 +1,4 @@
-// self-organizing standalone LoRa mesh network for Feather M0 LoRa modules
-// S. James Remington 2/2024
+// self-organizing standalone LoRa mesh network for Feather M0 LoRa modules  S. James Remington 2/2024
 // Heavily modified from example code at https://nootropicdesign.com/projectlab/2018/10/20/lora-mesh-networking/
 // github source https://github.com/nootropicdesign/lora-mesh
 // start 2/20/2024, remove ATmega-specific stuff
@@ -19,7 +18,6 @@
 #include <RHMesh.h>
 #include <RH_RF95.h>
 
-
 // for feather m0
 #define RFM95_CS 8
 #define RFM95_RST 4
@@ -28,6 +26,7 @@
 #define LED 13
 
 #define N_NODES 4  //max 10 given RHRouter table dimensions
+
 // *** hard coded node address *** (no EEPROM)
 #define THIS_NODE 1  //white antenna
 
