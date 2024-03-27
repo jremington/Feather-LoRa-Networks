@@ -1,18 +1,16 @@
 // Direct text messaging between two LoRa nodes with fixed network address
 // RHRouter manager application
 // -*- mode: C++ -*-
-// Example sketch showing how to create a simple addressed, 3 node routed reliable messaging client
-// with the RHRouter class.
-// It is designed to work with the other examples rf95_router_*
+// Example sketch showing how to create a simple addressed, 2 node routed reliable messaging client
+// with the RHRouter class. It is designed to work with the other examples rf95_router_*
 
 #include <RHRouter.h>
 #include <RH_RF95.h>
 #include <SPI.h>
 
-// In this small artifical network of 3 nodes,
+// In this small artifical network of 2 nodes,
 // messages are routed via intermediate nodes to their destination
 // node. All nodes can act as routers
-// CLIENT1_ADDRESS <-> REPEATE2_ADDRESS <-> CLIENT3_ADDRESS
 
 #define CLIENT1_ADDRESS 1
 #define CLIENT2_ADDRESS 2
@@ -75,7 +73,7 @@ void setup()
         while (1); //hang
         }
   */
-  // assume network connectivity 1<->2<->3 exclusive  (only neighbor nodes visible)
+  // assume network connectivity 1<->2
   // Manually define the routes for this network node, which can talk only to SERVER1
 
   manager.addRouteTo(CLIENT1_ADDRESS, CLIENT1_ADDRESS);
