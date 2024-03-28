@@ -12,7 +12,7 @@ To run the 4 node version on the SAM M0, you will need to make four numbered cop
 
 With hops, it might look like this: `3 1(2,-48) 2(2,-46) 4(2,-47)` (all routes from 3 start at node 2).
 
-**Notes on loop timing:**  For the network to respond to node dropouts and reappearances, RHMesh requires that all nodes need to attempt communication with all other nodes on a regular basis. The loop function does this, but must also switch to receive mode to listen for incoming traffic. 
+**Notes on loop timing:**  For the network to respond to node dropouts and reappearances, RHMesh requires that all nodes attempt communication with all other nodes on a regular basis. The loop function does this, but must also switch to receive mode to listen for incoming traffic. 
 
 When all nodes are responding, the loop time is primarily determined by the time spent listening, in the FeatherMesh1 example, a random time selected from the range (1000,3000) milliseconds, and overall network responsivity is quick. 
 
