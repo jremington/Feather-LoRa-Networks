@@ -3,7 +3,7 @@ Less noisy that FeatherMeshTest, only received messages and minimal network info
 
 To run this on the SAM M0, you will need to make four numbered copies of FeatherMesh1.ino, with different values of THIS_NODE (e.g. 1 to 4).
 
-**Example data report:** `<3:0 "#799: 3959 mV' from node, hops, packet number (on a per node basis, to detect data loss), and node battery voltage.
+**Example data report:** `<3:0 "#799: 3959 mV` from node, hops, packet number (on a per node basis, to detect data loss), and node battery voltage.
 
 **Node info report:** looks something like this:
 `3 1(1,-48) 2(2,-42) 4(4,-47)`
