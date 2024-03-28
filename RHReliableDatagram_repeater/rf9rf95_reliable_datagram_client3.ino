@@ -1,4 +1,4 @@
-// modified from example rf95_reliable_datagram_client
+// modified from example rf22_reliable_datagram_client
 // -*- mode: C++ -*-
 // Example sketch showing how to create a simple addressed, reliable messaging client
 // with the RHReliableDatagram class, using the RH_RF95 driver to control a RF95 radio.
