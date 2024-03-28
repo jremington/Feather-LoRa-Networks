@@ -1,8 +1,8 @@
-FeatherMesh1 is a practical four node mesh network example. All nodes report data from each other, with occasional network connectivity reports. The number of nodes is set by N_NODES, and could be as many as ten with the default RHRouter node connectivity table configuration. All data transmitted by any 3 active nodes can be harvested from the logged output of the remaining node.
+FeatherMesh1 is a practical four node mesh network example. All nodes report data from each other, with occasional network connectivity reports. The number of nodes is set by N_NODES, and could be as many as ten with the default RHRouter node connectivity table configuration. All data transmitted by any 3 active nodes can be harvested from the logged output of the remaining node. 
 
 FeatherMesh1 is less verbose than FeatherMeshTest, only received messages and minimal network info are logged to the console. 
 
-To run this on the SAM M0, you will need to make four numbered copies of FeatherMesh1.ino, with different values of THIS_NODE (e.g. 1 to 4).
+To run the 4 node version on the SAM M0, you will need to make four numbered copies of FeatherMesh1.ino, with different values of THIS_NODE (e.g. 1 to 4), and upload them to four Feather M0 LoRa modules. For two nodes only, simply reduce N_NODES to two, make two copies, and upload to two nodes.
 
 **Example data report** `<3:0 "#799: 3959 mV"` from node, hops, packet number (on a per node basis, to detect data loss), and node battery voltage.
 
