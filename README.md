@@ -11,5 +11,5 @@ In countless hours of tests, I have not encountered any obvious bugs in the Radi
 Some other posted and recommended open source examples of Feather mesh networks:
 ```
 https://github.com/royyandzakiy/LoRa-RHMesh
-https://nootropicdesign.com/projectlab/ ... etworking/
+https://nootropicdesign.com/projectlab/2018/10/20/lora-mesh-networking/
 ```
