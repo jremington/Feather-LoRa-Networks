@@ -1,1 +1,1 @@
-This example demonstrates one approach to making a very simple two-way repeater with three nodes (two clients and one repeater), based on RH_ReliableDatagram.
+This example demonstrates one approach to making a very simple two-way repeater with three nodes (two clients and one repeater), based on RH_ReliableDatagram.  Each client can transmit data message to the other client, via a line-of-sight repeater.
