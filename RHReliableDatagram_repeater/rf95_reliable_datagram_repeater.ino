@@ -13,6 +13,7 @@
 #include <SPI.h>
 
 #define REPEATER_ADDRESS 1
+// repeater node 1 is white antenna, COM12
 // client node list
 int client_nodes[2] = {2, 3}; 
 
