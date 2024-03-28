@@ -9,6 +9,7 @@ Message traffic features acknowledged, reliable message delivery to intermediate
 In countless hours of tests, I have not encountered any obvious bugs in the RadioHead library. It is a solid, very reliable and very professional contribution to the community.
 
 Some other posted and recommended open source examples of Feather mesh networks:
-
-  https://github.com/royyandzakiy/LoRa-RHMesh
-  https://nootropicdesign.com/projectlab/ ... etworking/
+```
+https://github.com/royyandzakiy/LoRa-RHMesh
+https://nootropicdesign.com/projectlab/ ... etworking/
+```
