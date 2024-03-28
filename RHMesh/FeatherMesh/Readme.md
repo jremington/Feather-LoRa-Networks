@@ -1,4 +1,4 @@
-Practical four node mesh network example. All nodes report data from each other, with occasional network connectivity reports.
+FeatherMesh1 is a practical four node mesh network example. All nodes report data from each other, with occasional network connectivity reports.
 Less noisy that FeatherMeshTest, only received messages and minimal network info are logged to the console. 
 
 To run this on the SAM M0, you will need to make four numbered copies of FeatherMesh1.ino, with different values of THIS_NODE (e.g. 1 to 4).
