@@ -1,4 +1,4 @@
-Various examples of RHMesh, a self-organizing standalone mesh network with automatic route discovery, based on RadioHead RHMesh manager.
+Various examples of a self-organizing standalone mesh network with automatic route discovery, based on the RadioHead RHMesh manager.
 
 The first (FeatherMeshTest) is a rewrite of the four-node example posted at https://nootropicdesign.com/projectlab/2018/10/20/lora-mesh-networking/ 
 
