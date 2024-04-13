@@ -5,4 +5,4 @@ Since this are generally more important than data messages, many tries are made 
 
 It is intended that Serial1 be connected to a Bluetooth module like HC-06, to facilitate sending text messages via mobile phone.
 
-All nodes report ASCII data messages addressed to them by data nodes, such as those programmed with the code in the RHMesh subfolder.
+All nodes report ASCII data messages addressed to them by data nodes, such as those nodes programmed with the code in the RHMesh subfolder.
