@@ -1,6 +1,6 @@
 Text networking with Feather M0!
 
-Serial input on port Serial1 with the format N:message is accepted, and up to 80 characters of "message" will be transmitted to node N. Node number N must be in range 1:N_NODES. Messages to self are not supported.
+Serial input on port Serial1 with the format N:message is accepted, and up to 80 characters of "message" will be transmitted to node N. Node number N must be in range 1:N_NODES. Messages to self are not supported and are ignored.
 
 Since these message would normally be regarded as more important than data messages, many tries are made to send the message (15 as currently programmed).
 
