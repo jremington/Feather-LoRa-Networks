@@ -1,4 +1,4 @@
-Text networking with Feather M0!
+**Text networking with Feather M0!**
 
 ASCII text messages via Serial1 input with the format N:message are accepted. Up to 80 characters of "message" will be transmitted to node N. Node number N must be in range 1:N_NODES. 
 
