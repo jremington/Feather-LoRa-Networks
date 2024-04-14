@@ -10,7 +10,7 @@ To run the 4 node version on the SAM M0, you will need to make four numbered cop
 
 **Interpretation:** Node 3 communicates directly with nodes 1, 2 and 4, with stated last rssi values. No hops.
 
-With hops, it might look like this: `3 1(2,-48) 2(2,-46) 4(2,-47)` (all routes from 3 start at node 2).
+With hops, it might look like this: `3 1(2,-48) 2(2,-46) 4(2,-47)` (all routes from 3 require participation of node 2).
 
 **Notes on loop timing:**  For the network to respond to node dropouts and reappearances, RHMesh requires that all nodes attempt communication with all other nodes on a regular basis. The loop function does this, but must also switch to receive mode to listen for incoming traffic. 
 
