@@ -192,7 +192,7 @@ void loop() {
       RHRouter::RoutingTableEntry *route = manager->getRouteTo(from);
       if (route != NULL ) { //fixed null pointer handling
         via = route->next_hop;
-        if (via != 0) rssi[via - 1] = rf95.lastRssi();
+        if (via > 0 and via <= N_NODES) rssi[via - 1] = rf95.lastRssi();  //fix out of bounds writes
       }
 
       // log ASCII message received, reporting last hop node
