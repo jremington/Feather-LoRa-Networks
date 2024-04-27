@@ -2,7 +2,7 @@
 // ping message type added to update network connectivity
 // text message capability added on Serial1
 // AES128 encryption for text messages added 4/17/2024. Works great!
-// This version supports Feather with TFT Wing
+// This version supports Feather with FeatherWing OLED display
 //
 // S. James Remington 4/2024
 // Heavily modified from example code at https://nootropicdesign.com/projectlab/2018/10/20/lora-mesh-networking/
