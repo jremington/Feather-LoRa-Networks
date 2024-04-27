@@ -14,7 +14,7 @@ https://github.com/royyandzakiy/LoRa-RHMesh
 https://nootropicdesign.com/projectlab/2018/10/20/lora-mesh-networking/
 ```
 
-# Example of Feather_TFT node in 3D printed case
+# Example of FeatherBT_TFT node in 3D printed case
 
 Node 1 reports this message received from node 2 at -57 dBm RSSI:
 
