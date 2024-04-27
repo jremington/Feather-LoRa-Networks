@@ -1,4 +1,4 @@
-AES128 encrypted version of RHMesh with text messages on Serial1.  Works well.
+Optional AES128 encrypted version of RHMesh with text messages on Serial1.  Works well.
 
 Supports the FeatherWing TFT display, if the option is enabled.
 
