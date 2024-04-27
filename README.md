@@ -16,6 +16,6 @@ https://nootropicdesign.com/projectlab/2018/10/20/lora-mesh-networking/
 
 # Example of Feather_TFT node in 3D printed case
 
-Node reports this message received from node 2 at -57 dBm RSSI:
+Node 1 reports this message received from node 2 at -57 dBm RSSI:
 
 ![IMG_1616](https://github.com/jremington/Feather-LoRa-Networks/assets/5509037/f3905397-d568-44e8-830d-529e5da48b65)
