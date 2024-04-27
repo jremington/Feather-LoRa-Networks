@@ -106,8 +106,8 @@ byte readNodeId(void) {
 void setup() {
   randomSeed(analogRead(0) + analogRead(1) + analogRead(2)); //for now
   Serial.begin(115200);
-  while (!Serial) ; // Wait for debug serial port to be available
-  //delay(2000);  //no hanging for battery powered node
+  //while (!Serial) ; // Wait for debug serial port to be available
+  delay(2000);  //no hanging for battery powered node
   Serial.println("Serial started");
 
   pinMode(LED_BUILTIN, OUTPUT);
