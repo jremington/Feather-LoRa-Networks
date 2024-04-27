@@ -13,3 +13,7 @@ Some other posted and recommended open source examples of Feather mesh networks:
 https://github.com/royyandzakiy/LoRa-RHMesh
 https://nootropicdesign.com/projectlab/2018/10/20/lora-mesh-networking/
 ```
+
+# Example of Feather_TFT node in 3D printed case
+
+![IMG_1616](https://github.com/jremington/Feather-LoRa-Networks/assets/5509037/f3905397-d568-44e8-830d-529e5da48b65)
