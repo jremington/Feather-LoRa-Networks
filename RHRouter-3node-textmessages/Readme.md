@@ -6,4 +6,4 @@ to each other, but have line-of-sight connectivity with the repeater. End-to-end
 to the repeater is either silently acknowledged, or logged in case of failure.
 
 When each client is initialized, it checks connectivity with the repeater and reports success of failure on the serial monitor.
-The repeater simpley forwards messages not directed to it and does not report this activity on the serial monitor.
+The repeater simply forwards messages not directed to it and does not report this activity on the serial monitor.
