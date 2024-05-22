@@ -1,4 +1,4 @@
-Optional AES128 encrypted version of RHMesh with text messages on Serial1.  Works well.
+Optional AES128 encrypted version of RHMesh with text messages on Serial1.  Works well on M0. Not enough memory on ATmega32U4 for encryptions or OLED.
 
 Supports and logs message to the FeatherWing OLED display, if the option is enabled.
 
