@@ -16,7 +16,7 @@ https://nootropicdesign.com/projectlab/2018/10/20/lora-mesh-networking/
 
 # Example of FeatherBT_OLED node in 3D printed case
 
-Each node like that shonw below contains a Feather radio with OLED display, battery, switch and an HC-06 serial UART Bluetooth module, which can accept text messages from a paired mobile phone or computer, to be transmitted to a specific node address. Messages are optionally displayed on the OLED or can be retransmitted by UART Bluetooth to another paired phone or computer.
+Each node like that pictured below contains a Feather radio with OLED display, battery, switch and an HC-06 UART serial Bluetooth module, which can accept text messages from a paired mobile phone or computer, to be transmitted to a specific node address. Received messages are optionally displayed on the OLED or can be retransmitted by UART Bluetooth to another paired phone or computer.
 
 Here, node 1 reports a message received from node 2 at -57 dBm RSSI:
 
