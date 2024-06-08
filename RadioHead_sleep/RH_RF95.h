@@ -13,7 +13,7 @@
 #define RH_RF95_h
 
 #include <RHSPIDriver.h>
-#include "ArduinoLowPower.h"  //mod by SJR 6/7/2024
+#include "ArduinoLowPower.h"  //mod by SJR 6/7/2024  Use local, fixed version of lib!
 
 // This is the maximum number of interrupts the driver can support
 // Most Arduinos can handle 2, Megas can handle more
