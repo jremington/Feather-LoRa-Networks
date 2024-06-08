@@ -1,5 +1,10 @@
 # Feather-LoRa-Networks
 
+**UPDATE 6/8/2024**:
+
+Fixed the ArduinoLowPower library and implemented deep sleep for the M0 processor during receive.  Current draw is now about 24 mA for the Feather M0 board (essentially the radio only) while listening for packets. No missed packets during bench tests.  See issue #30 in the official ArduinoLowPower repository for a fix that remains to be implemented four years after the problem was noticed! To implement sleep modes, use the version of the ArduinoLowPower library in this repository, and replace RH_RF95.cpp and RH_RF95.h in the RadioHead library with those found in this repository.
+
+
 This repository contains several working, tested examples of standalone LoRa networks based on the RadioHead library. They were developed and tested on the Adafruit Feather M0 LoRa module, but should work with any Feather radio that is supported by the RadioHead library.  
 
 Examples include a self-organizing, standalone mesh network, based on the RHMesh manager, and fixed node repeater networks based on the RHRouter and RHReliableDatagram managers.
