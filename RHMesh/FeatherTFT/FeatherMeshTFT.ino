@@ -17,11 +17,12 @@
 
 Adafruit_SH1107 display = Adafruit_SH1107(64, 128, &Wire);
 
+#define RH_HAVE_SERIAL   //for debug print options in RadioHead mesh and router code
+#define RH_TEST_NETWORK 1  // **if defined in RHRouter.h** => Test Network 1-2-3-4
 #include <RHRouter.h>
 #include <RHMesh.h>
 #include <RH_RF95.h>
-#define RH_HAVE_SERIAL   //for debug print options in RadioHead mesh and router code
-#define RH_TEST_NETWORK 1  // **if defined in RHRouter.h** => Test Network 1-2-3-4
+
 
 // for feather m0
 #define RFM95_CS 8
