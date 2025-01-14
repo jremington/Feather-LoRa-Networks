@@ -239,9 +239,10 @@ void loop() {
   // *****
 
   while (Serial1.available()) {
-    char c = Serial1.read();
+    char c = Serial1.peek();
 
-    if ( (c == 13) or (index + 1 >= sizeof(message_buffer))) { //<CR> terminates line
+    if ( (c == 13) or (index + 1 >= sizeof(message_buffer))) { //<CR> or buffer full terminates line
+      if (c == 13) c = Serial1.read(); //clear it out
       message_buffer[index] = 0; //terminate character string
 
       if (N_NODES == 2) { //just pick the other node
@@ -257,14 +258,16 @@ void loop() {
 
       message_attempts = 0;  //reset counter
       index = 0; //reset for next input line
-      break;  //exit while
     }
 
-    else if (c >= ' ') {//printable char?
+    else {
+      c = Serial1.read(); //get next char
+      if (c >= ' ') {//printable char?
       message_buffer[index] = c;
       index++;
+      }
     }
-  }
+  }  //end while available
 
   // *****
   // step through the nodes, send message or ping
