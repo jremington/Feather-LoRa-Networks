@@ -146,28 +146,25 @@ void loop() {
   // *****
 
   while (Serial1.available()) {
-    char c = Serial1.read();
-    if ( (c == 13) or (index + 1 >= sizeof(message_buffer))) { //<CR> terminates line
+    char c = Serial1.peek();
+    if ( (c == 13) or (index + 1 >= sizeof(message_buffer))) { //<CR> or buffer full terminates line
+      if (c == 13) c=Serial1.read(); //remove the <CR> from buffer
       message_buffer[index] = 0; //terminate line
       message_target_node = atoi(message_buffer);
       if (message_target_node > 0 and message_target_node <= N_NODES) message_to_send = 1;
       if (message_target_node == nodeId) message_to_send = 0; //ignore message to self
       message_attempts = 0;  //reset counter
       index = 0; //reset for next input line
-
-      // TODO do something about address within message?
-      //      Serial1.print(message_target_node);  //debug
-      //      Serial1.print(">");
-      //      Serial1.println(message_buffer);
-      
-      break;  //exit if
     }
 
-    else if (c >= ' ') {//printable char?
+    else {
+      c = Serial1.read(); //get next char
+      if (c >= ' ') {//printable char?
       message_buffer[index] = c;
       index++;
+      }
     }
-  }
+  } //end while available()
 
   // *****
   // step through the nodes, send message or ping
