@@ -258,6 +258,7 @@ void loop() {
 
       message_attempts = 0;  //reset counter
       index = 0; //reset for next input line
+      break; //make sure to exit while() 6/8/25
     }
 
     else {
